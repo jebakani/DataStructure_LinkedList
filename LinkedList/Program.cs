@@ -6,6 +6,11 @@ namespace LinkedList
     {
         /// <summary>
         /// UC1-Creating simple Linked List 
+        /// UC2- Method to add element in front
+        /// UC3- Method to insert element at last. 
+        /// UC4- Ability to add between two nodes
+        /// UC5- Ability to delete first node
+        /// UC6- Ability to delete last node
         /// </summary>
         /// <param name="args">The arguments.</param>
         static void Main(string[] args)
@@ -19,7 +24,7 @@ namespace LinkedList
             Console.WriteLine("Before Deleting");
             linkedList.DisplayList();
             Console.WriteLine("After deleting");
-            linkedList.DeleteFirst();
+            linkedList.DeleteLast();
             linkedList.DisplayList();
             Console.Read();
         }
