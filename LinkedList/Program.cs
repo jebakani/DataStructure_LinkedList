@@ -25,7 +25,7 @@ namespace LinkedList
             Console.WriteLine("Before Deleting");
             linkedList.DisplayList();
             Console.WriteLine("After deleting");
-            linkedList.DeleteLast();
+            linkedList.DeleteNode(30);
             linkedList.DisplayList();
             Console.Read();
         }
