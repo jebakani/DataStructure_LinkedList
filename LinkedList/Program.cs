@@ -22,7 +22,8 @@ namespace LinkedList
             linkedList1.AddLast(56);
             linkedList1.AddLast(30);
             linkedList1.AddLast(70);
-            linkedList.DisplayList();
+            linkedList1.InsertNextTo(45, 30);
+            linkedList1.DisplayList();
             Console.Read();
         }
     }
