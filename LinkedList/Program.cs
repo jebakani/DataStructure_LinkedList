@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace LinkedList
 {
@@ -13,14 +12,11 @@ namespace LinkedList
         {
             Console.WriteLine("Welcome to Linked List Implementation");
             //creating object for collection class linked list 
-            LinkedList<int> linkedList = new LinkedList<int>();
+            MyLinkedList<int> linkedList = new MyLinkedList<int>();
             linkedList.AddFirst(70);
-            linkedList.AddLast(58);
-            linkedList.AddLast(30);
-            foreach (int i in linkedList)
-            {
-                Console.WriteLine(i);
-            }
+            linkedList.AddFirst(30);
+            linkedList.AddFirst(56);
+            linkedList.DisplayList();
             Console.Read();
         }
     }
