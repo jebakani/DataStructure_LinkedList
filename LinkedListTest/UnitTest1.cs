@@ -27,5 +27,22 @@ namespace LinkedListTest
             Assert.AreEqual(expected, actual);
             
         }
+        [TestMethod]
+        public void SearchTest2()
+        {
+            //Assign
+            linkedList.AddFirst(70);
+            linkedList.AddFirst(30);
+            linkedList.AddFirst(56);
+            //act
+            int actual = linkedList.SearchNode(30);
+            int expected = 1;
+            linkedList.InsertNextTo(45, 30);
+            
+            //Assert
+            Assert.AreEqual(expected, actual);
+            linkedList.DisplayList();
+
+        }
     }
 }

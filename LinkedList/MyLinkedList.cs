@@ -87,8 +87,7 @@ namespace LinkedList
                 }
                 else
                 {
-                    Console.WriteLine("Element {0} is not found.\nElement{1} is added at last", nextValue, value);
-                    prev.Next = newNode;
+                    Console.WriteLine("Element {0} is not found.", nextValue);
                 }
             }
         }
