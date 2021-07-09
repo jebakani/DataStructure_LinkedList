@@ -11,6 +11,7 @@ namespace LinkedList
         /// UC4- Ability to add between two nodes
         /// UC5- Ability to delete first node
         /// UC6- Ability to delete last node
+        /// UC7- Ability to search the Node
         /// </summary>
         /// <param name="args">The arguments.</param>
         static void Main(string[] args)

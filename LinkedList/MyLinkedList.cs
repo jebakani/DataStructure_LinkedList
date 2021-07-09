@@ -16,7 +16,7 @@ namespace LinkedList
             this.Next = null;
         }
     }
-    class MyLinkedList<T>
+    public class MyLinkedList<T>
     {
         private Node<T> head;
 
@@ -121,8 +121,27 @@ namespace LinkedList
                 temp.Next = null;
             }
         }
-
-
+        //method to search for the element
+        public int SearchNode(T value)
+        {
+            if (head == null)
+            {
+                return 0;
+            }
+            else
+            {
+                Node<T> temp = head;
+                while (temp.Next != null && !(temp.value.Equals(value)))
+                {
+                    temp = temp.Next;
+                }
+                if (temp.value.Equals(value))
+                {
+                    return 1;
+                }
+                return 0;
+            }
+        }
         //method to display the element 
         public void DisplayList()
         {
